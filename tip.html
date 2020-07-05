@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+
+		<meta CHARSET="UTF-8">
+		<title>Tip</title>
+		<link rel="stylesheet" type = "text/css" href = "css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/973513fb18.js" crossorigin="anonymous"></script> <!-- FontAwsome CDN -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+	</head>
+
+	<body>
+		<nav>
+			<img src="img/js.png" alt="javascript logo">
+			<i id = "extend_nav" class="fa-lg fas fa-list-ul"></i>
+			<ul id="list_nav">
+				<li id = "active"><a href="tip.html">Tip Calculator</a></li>
+				<li>More to come</li>
+			<ul>
+		</nav>
+		<main class="main_tip">
+
+			<div class="tip">
+				<h1>TIP CALCULATOR</h1>
+				<div>
+					<label for = "bill">How much is the bill?</label><br>
+					<input type="number" id="bill" name="bill"><p class="inline">€</p>
+				</div>
+				<div>
+					<p>How was it?</p>
+					<div class="percent">
+						<input id="p15" class="tip"  type="radio" name="feedback" value = "15" />
+						<label class="emoji" for="p15">&#128516;<p>15%</p></label>
+						<input id="p10" class="tip" type="radio" name="feedback" value = "10" />
+						<label class="emoji" for="p10">&#128578;<p>10%</p></label>
+						<input id="p5" class="tip" type="radio" name="feedback" value="5" />
+						<label class="emoji" for="p5">&#128528;<p>5%</p></label>
+						<input id="p0" class="tip"  type="radio" name="feedback" value = "0" />
+						<label class="emoji" for="p0">&#128545;<p>0%</p></label>
+
+					</div>
+				</div>
+				<div>
+					<label for = "people">How many people are you sharing it with?</label><br>
+					<input type="number" id="people" name="people">
+				</div>
+				<button id="calculate">
+					CALCULATE
+				</button>
+				<div id="result">
+					
+				</div>
+
+			</div>
+			
+		</main>
+		<script type="text/javascript" src="scripts/script_tip.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>
+
+
